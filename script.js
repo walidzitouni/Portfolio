@@ -211,3 +211,16 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const cvButton = document.querySelector('.hero-buttons .glow-genz-button');
+    
+    if (cvButton) {
+        cvButton.addEventListener('click', function() {
+            // Create a temporary link and trigger download
+            const link = document.createElement('a');
+            link.href = 'WalidZitouni.pdf';
+            link.download = 'Walid_Zitouni_CV.pdf';
+            link.click();
+        });
+    }
+});
