@@ -92,7 +92,7 @@ portfolio-cybersecurity/
 ├── script.js               # JavaScript pour animations et interactions
 ├── img.jpg                 # Photo de profil
 ├── README.md               # Documentation du projet
-
+```
 --
 
 **⭐ Si ce projet vous a plu, n'hésitez pas à lui donner une étoile !**
