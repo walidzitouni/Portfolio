@@ -11,6 +11,7 @@ Portfolio personnel moderne avec thème cybersécurité Matrix, conçu pour pré
 ---
 
 ## 🎯 Aperçu
+![Hero Section](Website.png)
 
 Ce portfolio présente un design cyberpunk/Matrix avec :
 - 🌟 Animation de typing dynamique
