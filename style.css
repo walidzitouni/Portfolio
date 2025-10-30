@@ -19,12 +19,14 @@ html {
   scroll-behavior: smooth;
 }
 
+
 body {
   font-family: 'Courier New', monospace;
   background: var(--bg-1);
   color: var(--text);
   line-height: 1.6;
   overflow-x: hidden;
+  
 }
 
 body::before {
@@ -701,6 +703,8 @@ body::after {
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.5);
   border: 1px solid var(--accent);
+  height: 50px;
+  width: 50px;
 }
 
 .social-link:hover {
