@@ -1,4 +1,3 @@
-![Portfolio Screenshot](cp.png)
 # 🔐 Portfolio Cybersécurité - Walid Zitouni
 
 Portfolio personnel moderne avec thème cybersécurité Matrix, conçu pour présenter mes compétences, projets et expériences dans le domaine de la cybersécurité offensive.
