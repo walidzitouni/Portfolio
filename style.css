@@ -936,3 +936,49 @@ body::after {
     justify-content: center;
   }
 }
+.terminal {
+  background: #000;
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,255,0,0.3);
+  overflow: hidden;
+  font-family: 'Courier New', monospace;
+}
+
+.terminal-header {
+  background: #111;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid var(--accent);
+}
+
+.terminal-header .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.terminal-header .red { background: #ff5f56; }
+.terminal-header .yellow { background: #ffbd2e; }
+.terminal-header .green { background: #27c93f; }
+
+.terminal-title {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.terminal-body {
+  padding: 20px;
+  color: var(--accent);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+#decrypt-bar {
+  font-weight: bold;
+  color: var(--accent);
+}

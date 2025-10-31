@@ -224,3 +224,56 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const chars = "!@#$%^&*()_+{}[]<>?/\\|~";
+  const decryptEl = document.querySelector("#skills .decrypt");
+  const progressEl = document.getElementById("decrypt-progress");
+  const barEl = document.getElementById("decrypt-bar");
+  let started = false;
+
+  function startDecryption(el) {
+    const text = el.textContent;
+    let percent = 0;
+    let iterations = 0;
+    const totalBlocks = 20; // length of the bar
+
+    const interval = setInterval(() => {
+      // Update progress
+      percent++;
+      const filled = Math.floor((percent / 100) * totalBlocks);
+      const bar = "█".repeat(filled) + "▒".repeat(totalBlocks - filled);
+      barEl.textContent = bar;
+      progressEl.textContent = percent + "%";
+
+      // Update decryption in sync with percent
+      iterations = Math.floor((percent / 100) * text.length);
+      el.textContent = text
+        .split("")
+        .map((letter, i) => {
+          if (i < iterations) return text[i];
+          return chars[Math.floor(Math.random() * chars.length)];
+        })
+        .join("");
+
+      // Stop when done
+      if (percent >= 100) {
+        clearInterval(interval);
+        el.textContent = text; // ensure final clean text
+      }
+    }, 50); // adjust speed (50ms * 100 = ~5s total)
+  }
+
+  // Trigger only when section is visible
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !started) {
+        started = true;
+        startDecryption(decryptEl);
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.3 });
+
+  observer.observe(document.querySelector("#skills"));
+});
