@@ -982,3 +982,31 @@ body::after {
   font-weight: bold;
   color: var(--accent);
 }
+
+
+.cert-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.cert-track {
+  display: flex;
+  gap: 40px;
+  animation: scrollCerts 20s linear infinite;
+}
+
+.cert-track img {
+  height: 300px;
+  filter: drop-shadow(0 0 10px var(--accent));
+  transition: transform 0.3s ease;
+}
+
+.cert-track img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scrollCerts {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
