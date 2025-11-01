@@ -11,12 +11,14 @@
         <nav class="nav-container">
             <div class="logo">Walid<span class="logo-accent">_Zitouni</span></div>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link active">Accueil</a></li>
-                <li><a href="#about" class="nav-link">À Propos</a></li>
-                <li><a href="#skills" class="nav-link">Compétences</a></li>
-                <li><a href="#projects" class="nav-link">Projets</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
+    <li><a href="#home" class="nav-link active">Accueil</a></li>
+    <li><a href="#about" class="nav-link">À Propos</a></li>
+    <li><a href="#skills" class="nav-link">Compétences</a></li>
+    <li><a href="#projects" class="nav-link">Projets</a></li>
+    <li><a href="#experiences" class="nav-link">Expériences</a></li>
+    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+</ul>
             <div class="nav-social">
                 <a href="https://github.com/Walidzitouni" aria-label="GitHub" target="_blank" class="social-icon">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -196,73 +198,121 @@ Categorie                         Skills/Knowledge Gained
         
 
         <section id="projects" class="section">
-            <div class="container">
-                <h2 class="section-title">Mes Projets</h2>
-                <div class="projects-grid slide-in-up">
-                    <div class="project-card">
-                        <div class="project-content">
-                            <h3>VPN Site-to-Site Sécurisé</h3>
-                            <p>Conception et simulation d'un tunnel VPN IPSec entre deux sites corporatifs avec GNS3. Configuration du routage dynamique (OSPF, EIGRP), BGP, NAT et ACLs.</p>
-                            <div class="project-tech">
-                                <span>GNS3</span>
-                                <span>IPSec</span>
-                                <span>OSPF</span>
-                                <span>EIGRP</span>
-                                <span>BGP</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-content">
-                            <h3>Malware Trojan-Ransomware</h3>
-                            <p>Développement d'un RAT avec persistance automatique, InfoStealer et ransomware utilisant RSA 2048 + AES-GCM. Serveur web centralisé pour gestion des victimes avec contournement antivirus.</p>
-                            <div class="project-tech">
-                                <span>Python</span>
-                                <span>Cryptographie</span>
-                                <span>RAT</span>
-                                <span>Evasion AV</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-content">
-                            <h3>EagleXHunter - OSINT Tool</h3>
-                            <p>Outil de reconnaissance multi-sources avec agrégation d'intelligence depuis Shodan, Censys et BinaryEdge. Intégration API Vulners pour recherche CVE avec scan threadé.</p>
-                            <div class="project-tech">
-                                <span>Python</span>
-                                <span>OSINT</span>
-                                <span>API Integration</span>
-                                <span>CVE</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-content">
-                            <h3>Stage - Domaines Zniber</h3>
-                            <p>Mise en place d'un lab Active Directory sécurisé. Configuration avancée du pare-feu Sophos XG. Réalisation d'attaques AS-REP Roasting, Kerberoasting et déploiement C2 avec Sliver.</p>
-                            <div class="project-tech">
-                                <span>Active Directory</span>
-                                <span>Sophos XG</span>
-                                <span>Pentesting</span>
-                                <span>C2 Framework</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-content">
-                            <h3>CTF Cellule - ENSA Oujda</h3>
-                            <p>Membre actif de l'équipe CTF. Création et organisation d'une compétition CTF au niveau mondial. Développement d'une plateforme CTFd pour les défis et assistance technique 24h.</p>
-                            <div class="project-tech">
-                                <span>CTFd</span>
-                                <span>Web Security</span>
-                                <span>Forensics</span>
-                                <span>Pwn</span>
-                            </div>
-                        </div>
+    <div class="container">
+        <h2 class="section-title">Mes Projets</h2>
+        <div class="projects-grid slide-in-up">
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>VPN Site-to-Site Sécurisé</h3>
+                    <p>Conception et simulation d'un tunnel VPN IPSec entre deux sites corporatifs avec GNS3. Configuration du routage dynamique (OSPF, EIGRP), BGP, NAT et ACLs.</p>
+                    <div class="project-tech">
+                        <span>GNS3</span>
+                        <span>IPSec</span>
+                        <span>OSPF</span>
+                        <span>EIGRP</span>
+                        <span>BGP</span>
                     </div>
                 </div>
             </div>
-        </section>
+            
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Malware Trojan-Ransomware</h3>
+                    <p>Développement d'un RAT avec persistance automatique, InfoStealer et ransomware utilisant RSA 2048 + AES-GCM. Serveur web centralisé pour gestion des victimes avec contournement antivirus.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Cryptographie</span>
+                        <span>RAT</span>
+                        <span>Evasion AV</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>EagleXHunter - OSINT Tool</h3>
+                    <p>Outil de reconnaissance multi-sources avec agrégation d'intelligence depuis Shodan, Censys et BinaryEdge. Intégration API Vulners pour recherche CVE avec scan threadé.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>OSINT</span>
+                        <span>API Integration</span>
+                        <span>CVE</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Link Dumper - Web Crawler</h3>
+                    <p>Outil de crawling automatisé pour pentesting. Extraction d'URLs, fichiers JavaScript, clés API et données sensibles. Crawling récursif multi-threadé avec sauvegarde JSON structurée.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Web Crawling</span>
+                        <span>Multi-threading</span>
+                        <span>Reconnaissance</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Stealth Keylogger</h3>
+                    <p>Keylogger Python intégré dans une application calculatrice fonctionnelle. Capture automatique des frappes avec envoi par email via SMTP. Interface Tkinter pour dissimulation.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>pynput</span>
+                        <span>Tkinter</span>
+                        <span>SMTP</span>
+                        <span>Stealth</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="experiences" class="section">
+    <div class="container">
+        <h2 class="section-title">Expériences</h2>
+        <div class="experience-timeline">
+            <div class="experience-item slide-in-left">
+                <div class="experience-date">
+                    <span>Juillet - Août 2025</span>
+                </div>
+                <div class="experience-content">
+                    <h3>Stage - Domaines Zniber</h3>
+                    <h4>Stagiaire en Sécurité Informatique</h4>
+                    <p>Mise en place d'un lab Active Directory sécurisé. Configuration avancée du pare-feu Sophos XG avec segmentation réseau et monitoring. Réalisation d'attaques AS-REP Roasting, Kerberoasting et déploiement C2 avec Sliver.</p>
+                    <div class="experience-tech">
+                        <span>Active Directory</span>
+                        <span>Sophos XG</span>
+                        <span>Pentesting</span>
+                        <span>C2 Framework</span>
+                        <span>Sliver</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="experience-item slide-in-right">
+                <div class="experience-date">
+                    <span> Novembre 2024 - Présent</span>
+                </div>
+                <div class="experience-content">
+                    <h3>CTF Cellule - ENSA Oujda</h3>
+                    <h4>Membre Actif - Équipe CTF</h4>
+                    <p>Membre actif de l'équipe CTF. Création et organisation d'une compétition CTF au niveau mondial (sur site et à distance). Développement d'une plateforme CTFd pour les défis (web, pwn, forensics). Assistance technique 24h aux participants.</p>
+                    <div class="experience-tech">
+                        <span>CTFd</span>
+                        <span>Web Security</span>
+                        <span>Forensics</span>
+                        <span>Pwn</span>
+                        <span>Event Management</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
         <section id="certifications" class="section">
   <div class="container">
@@ -270,7 +320,6 @@ Categorie                         Skills/Knowledge Gained
     <div class="cert-slider">
       <div class="cert-track">
         <img src="cert1.png" alt="Certification 1">
-        <img src="cert8.jpg" alt="Certification 8">
         <img src="cert2.png" alt="Certification 2">
         <img src="cert3.png" alt="Certification 3">
         <img src="cert4.png" alt="Certification 4">
@@ -279,7 +328,6 @@ Categorie                         Skills/Knowledge Gained
         <img src="cert7.png" alt="Certification 7">
         <!-- duplicate images for seamless loop -->
         <img src="cert1.png" alt="Certification 1">
-        <img src="cert8.jpg" alt="Certification 8">
         <img src="cert2.png" alt="Certification 2">
         <img src="cert3.png" alt="Certification 3">
         <img src="cert4.png" alt="Certification 4">
